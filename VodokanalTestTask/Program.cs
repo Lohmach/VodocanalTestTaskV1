@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace VodokanalTestTask
 {
     class Clodes
@@ -74,6 +75,10 @@ namespace VodokanalTestTask
             List<object> sortHeight = found_for_height(170, BD);
             for (int i = 0; i < sortHeight.Count; i++) { writer(sortHeight[i]); }
             Console.WriteLine("___________________________________________");
+
+            Console.WriteLine("\nНажмите любую кнопку, что бы закрыть консоль");
+            Console.ReadKey();
+            
         }
 
         static object init(Random rnd)
